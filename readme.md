@@ -87,7 +87,9 @@ check the python script in this link: [Python Script Data Update Simulation.py](
 ## Dataset Overview
 <details>
 <summary>Click to expand the Dataset Overview</summary>
-This project uses the Online Retail II dataset, which contains transactional data for a UK-based e-commerce business.
+This project uses the Online Retail II dataset, which contains transactional data for a UK-based e-commerce business. 
+
+Dataset link: [Online_Retail_II](https://github.com/adam-astiti/Big_Query_Project/blob/main/Online_Retail.csv)
 
 - **Data Type**:	Transactional Sales Data
 - **Origin** :	UK-Based Online Retailer
