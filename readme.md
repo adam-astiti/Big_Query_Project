@@ -11,7 +11,7 @@ To view the dashboard click here: [Live Looker Studio Dashboard](https://lookers
 
 ### **Category and	Technology / Skill**
 - **Cloud Platform** :	Google Cloud Platform (GCP)
-- **Core Services**	: Cloud Functions (2nd Gen),  Cloud Scheduler,  Pub/Sub,  Google Cloud Services
+- **Core Services**	: Cloud Functions (2nd Gen),  Cloud Scheduler,  Pub/Sub,  Google Cloud Setorage
 - **Data Warehouse**	: BigQuery
 - **BI & Visualization**	: Looker Studio
 - **Language & Libs**	: Python (Pandas, google-cloud-storage)
@@ -34,11 +34,13 @@ The pipeline automates the following workflow:
 
     - **Update data** in the google cloud bucket
 
+check the python script in this link: [Python Script Data Update Simulation.py](https://github.com/adam-astiti/Big_Query_Project/blob/main/Python%20Script%20Data%20Update%20Simulation.py)
+
 4.  **Data Visualized**:
 
-    - **BigQuery** automatically ingests the new file.
+    - **BigQuery** automatically ingests the new file. With scheduled query. (view sql query here: [raw_data_cleaning](https://github.com/adam-astiti/Big_Query_Project/blob/main/big_query_main_data_cleaning.sql), and [RFM_segmentation](https://github.com/adam-astiti/Big_Query_Project/blob/main/rfm_segmentation.sql))
 
-    - A **Looker Studio dashboard**, connected to a BigQuery, updates automatically, showing the latest sales and risk metrics.
+    - A **Looker Studio dashboard**, connected to a BigQuery, updates automatically, showing the latest sales and risk metrics. (view the live dashboard here: [Live Dashboard](https://lookerstudio.google.com/s/nleVW3vqDTo)
   
 ## Key Features & Business Impact
 1. **Automated KPI and Risk Monitoring**: The dashboard proactively show KPI, sales and revenue, customer RFM segmentation, identifies which products are most frequently canceled, helping to pinpoint quality or fulfillment issues.
